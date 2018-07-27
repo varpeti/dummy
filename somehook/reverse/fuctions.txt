@@ -1,0 +1,28 @@
+nm -g libPlayer.so >fuctions.txt
+
+0000000000201058 B __bss_start
+                 w __cxa_finalize
+0000000000201058 D _edata
+0000000000201060 B _end
+0000000000000c44 T _fini
+                 w __gmon_start__
+                 U __gxx_personality_v0@@CXXABI_1.3
+0000000000000970 T _init
+                 w _ITM_deregisterTMCloneTable
+                 w _ITM_registerTMCloneTable
+                 w _Jv_RegisterClasses
+                 U _Unwind_Resume@@GCC_3.0
+0000000000000b10 T _ZN5CoordaSERKS_
+0000000000000c1c T _ZN6Player8setCoordEii
+0000000000000bf2 T _ZN6Player8setCoordER5Coord
+0000000000000b4c T _ZN6PlayerC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+0000000000000b4c T _ZN6PlayerC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+0000000000000bb6 T _ZNK6Player7getNameB5cxx11Ev
+0000000000000be0 T _ZNK6Player8getCoordEv
+                 U _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSERKS4_@@GLIBCXX_3.4.21
+                 U _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS4_@@GLIBCXX_3.4.21
+                 U _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev@@GLIBCXX_3.4.21
+                 U _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@@GLIBCXX_3.4.21
+
+
+ZNK - K = const function

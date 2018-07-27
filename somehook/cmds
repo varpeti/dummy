@@ -1,0 +1,18 @@
+The program:
+
+libPlayer.so:
+g++ -shared -fPIC Player.cpp -o libPlayer.so
+
+main.run:
+g++ -std=c++14 -L. main.cpp -lPlayer -o main.run
+
+run:
+LD_LIBRARY_PATH=$PWD ./main.run
+
+Hack:
+
+hplayer.so:
+g++ -shared -fPIC hplayer.cpp -o hplayer.so -ldl
+
+run:
+LD_PRELOAD=$PWD/hplayer.so LD_LIBRARY_PATH=$PWD ./main.run
