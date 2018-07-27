@@ -1,0 +1,8 @@
+random.run:
+g++ -std=c++14 random.cpp -o random.run
+
+unrandom.so:
+gcc -shared -fPIC unrandom.c -o unrandom.so
+
+ldd:
+LD_PRELOAD=$PWD/unrandom.so ./random.run
